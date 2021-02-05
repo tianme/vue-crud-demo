@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import register from '../views/user/register.vue';
-// import list from '../views/user/list.vue'
 
 Vue.use(VueRouter);
 
@@ -14,7 +13,7 @@ const routes = [
   {
     path: '/user/list',
     name: 'user-list',
-    component: () => import(/* webpackChunkName: "about" */ '../views/user/list'),
+    component: () => import(/* webpackChunkName: "user-list" */ '../views/user/list'),
   },
 ];
 
